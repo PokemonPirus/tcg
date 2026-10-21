@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reglamento · Pokémon TCG · El baúl de Pirus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--red" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--yellow" aria-hidden="true"></div>
+
+    <div id="cabecera-container"></div>
+
+    <main>
+      <section class="panel page">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow eyebrow-initial">Manual de mesa</p>
+            <h2>Reglamento</h2>
+          </div>
+          <p class="hero__lead">
+            Resumen operativo para partidas de la liga. No sustituye el
+            reglamento oficial de The Pokémon Company, pero cubre lo que se
+            discute en cada ronda.
+          </p>
+        </div>
+
+        <div>
+          <div class="rules">
+            <article class="rule is-open">
+              <button type="button">
+                <h3>Inicio de partida</h3>
+                <span>-</span>
+              </button>
+              <p>
+                Cada jugador baraja, roba 7 cartas y coloca un Pokémon básico activo. Si no tiene Básico, mulligan (se meten las cartas en el mazo, se baraja y se vuelven a robar 7 nuevas cartas) el rival puede robar una carta extra por cada mulligan. Si los tienes en mano, puedes colocan hasta 5 Pokémon en banca y se lanza una moneda para decidir el primer turno.
+              </p>
+            </article>
+            <article class="rule">
+              <button type="button">
+                <h3>Inicio de turno</h3>
+                <span>+</span>
+              </button>
+              <p>
+                Roba 1 carta. Puedes jugar Pokémon a la banca, evolucionar (no el mismo turno que se pone en juego, salvo reglas especiales), adjuntar 1 energía, usar habilidades, objetos, partidarios, estadios y atacar. Al realizar un ataque, tu turno terminará (también tienes opción de no atacar y finalizar turno).
+              </p>
+            </article>
+            <article class="rule">
+              <button type="button">
+                <h3>Daño, KO y premios</h3>
+                <span>+</span>
+              </button>
+              <p>
+                El daño se marca con contadores. Debilidad suele multiplicar ×2 el daño realizado y si el Pokémon que recibe el ataque tiene resistencia, se le resta al daño que recibe. Un Pokémon con daño igual o superior a su vida, queda KO (todas sus cartas van a la pila de descarte y el rival toma las cartas de premios correspondientes (1 si es un Pokémon normal, 2 si es un EX, 3 si es un Mega EX).
+              </p>
+            </article>
+            <article class="rule">
+              <button type="button">
+                <h3>Victoria</h3>
+                <span>+</span>
+              </button>
+              <p>
+                Ganas la partida cuando tomas tu última carta de premio. Existen otras formas de ganar especiales, por ejemplo: Si el rival no puede colocar un Pokémon activo o si, cuando le toque robar su mazo ya no tiene ninguna carta.
+              </p>
+            </article>
+            <article class="rule">
+              <button type="button">
+                <h3>Cómo actuar durante las partidas</h3>
+                <span>+</span>
+              </button>
+              <p>
+                Baraja de forma limpia y con las cartas a la vista. Comunica tus acciones al rival en voz alta. No toques el mazo rival (excepto para realizar los cortes de baraja). Ante cualquier duda, llama a un juez. Utiliza fundas sleeves opacas y con el mismo dibujo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="piedepagina-container"></div>
+    <script src="cabecera.js"></script>
+    <script src="piedepagina.js"></script>
+    <script src="site.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

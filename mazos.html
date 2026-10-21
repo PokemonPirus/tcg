@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construcción de mazos · Pokémon TCG · El baúl de Pirus</title>
+    <link rel="icon" href="favicon_PirusPokemon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--red" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb--yellow" aria-hidden="true"></div>
+
+    <div id="cabecera-container"></div>
+
+    <main>
+      <section class="panel panel--lab page">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow eyebrow-initial">Construcción de mazos</p>
+            <h2>¡Desata el poder de tus cartas!</h2>
+          </div>
+          <p class="hero__lead">
+            Todo gira en torno a las cartas que tienes, cómo las combinas y qué estrategia quieres seguir. Construir un mazo puede parecer complicado, pero pronto conseguirás comenzar a armar combos que funcionan. 
+            Además, cuantas más partidas juegas, más aprendes de tus rivales y localizas posibles puntos de mejora para hacer tu mazo más competitivo.
+          </p>
+        </div>
+
+        <div class="block-stack">
+          <article class="loan">
+            <div>
+              <h2>Préstamo de mazos para jugar</h2>
+              <p>
+                ¿No tienes suficientes cartas para construir tu propio mazo? ¿Tienes muchas cartas, pero no sabes cómo montar un mazo de juego? ¡No pasa nada! En los torneos podrás solicitar un mazo de préstamo para ir viendo cómo funciona el juego en general.
+              </p>
+              <p>
+                En el local se prestan mazos para que puedas sentarte a una mesa a jugar
+                desde el primer día. Están pensados para ser sencillos de jugar:
+                pocas líneas de evolución, ataques claros y una estrategia
+                que se explica en un par de minutos.
+              </p>
+              <p>
+                Recuerda devolverlo siempre al terminar el torneo (con sleeves, caja y todo lo que te prestasen). Otra gente los utilizará en el futuro y agradecerá encontrarlo en perfecto estado.
+              </p>
+              <p>
+                Si te surgen dudas durante la partida, puedes pedir ayuda al personal del torneo. 
+                Te recomendamos visitar la <a href="recursos.html">sección de "Recursos"</a>, donde podrás aprender muchísimas cosas que te serán útiles en tus partidas.
+              </p>
+            </div>
+            <figure>
+              <img src="img/seccion-mazos.png" alt="Cartas y energías sobre la mesa de la tienda" />
+            </figure>
+          </article>
+
+          <div>
+            <p class="eyebrow">Guía rápida</p>
+            <h2>Tips de creación de mazos</h2>
+            <p class="hero__lead">
+              Conceptos mínimos antes de comprar o copiar una lista. Abre cada
+              punto como en el reglamento.
+            </p>
+            <div class="rules" id="deckTips">
+              <article class="rule is-open">
+                <button type="button">
+                  <h3>60 cartas, ni una más ni una menos</h3>
+                  <span>−</span>
+                </button>
+                <p>
+                  Un mazo legal tiene exactamente 60 cartas. Esas 60 cartas tendrás que repartirlas entre cartas de Pokémon,
+                  entrenadores, objetos y energías. Recuerda que los 6 premios no son cartas adicionales, sino que se cogen también de tu mazo de 60.
+                  ¡Ah! Y recuerda que, si en algún momento de la partida te quedas con 0 cartas en el mazo, perderás automáticamente esa partida.
+                </p>
+              </article>
+              <article class="rule">
+                <button type="button">
+                  <h3>Máximo 4 copias de cartas del mismo nombre</h3>
+                  <span>+</span>
+                </button>
+                <p>
+                  No está permitido llevar más de 4 cartas con el mismo nombre (aunque tengan distinto dibujo o rareza, si tienen el mismo nombre, sólo puedes meter 4 iguales).
+                  La única excepción ocurre con las energías que sean básicas, que podrás meter tantas como desees, sin límite.
+                </p>
+              </article>
+              <article class="rule">
+                <button type="button">
+                  <h3>Pokémon: básicos, evoluciones y de apoyo</h3>
+                  <span>+</span>
+                </button>
+                <p>
+                  Necesitas Pokémon Básicos para empezar la partida. Un mazo
+                  "fácil" suele llevar varios básicos y pocas evoluciones
+                  largas. Recuerda incluir Pokémon atacantes (los encargados de hacerle daño al rival) y de Pokémon u objetos de apoyo
+                  (los que se encargarán de buscar cartas, curar, etc.) Recuerda que un Pokémon ex que quede fuera de combate le da al rival 2 cartas de premio en lugar de 1.
+                </p>
+              </article>
+              <article class="rule">
+                <button type="button">
+                  <h3>Energías, siempre necesarias</h3>
+                  <span>+</span>
+                </button>
+                <p>
+                  Elige los tipos de energía de tu mazo (uno o dos tipos es lo más común). En mazos simples se suelen utilizar entre 8 y 16 energías).
+                  Revisa cuántas energías requieren los ataques de tus Pokémon (para no complicarte, evita utilizar Pokémon con ataques que requieran más de 3 energías).
+                </p>
+              </article>
+              <article class="rule">
+                <button type="button">
+                  <h3>Entrenadores, objetos y estadios</h3>
+                  <span>+</span>
+                </button>
+                <p>
+                  Puedes jugar un partidario por turno. En el caso de los objetos, se pueden tantos como quieras por turno.
+                </p>
+                <p>
+                  Los estadios que se jueguen afectan a ambos jugadores y además, el último estadio que se juegue, sustituye al estadio anterior.
+                </p>
+                <p>
+                  Un mazo de principiante funciona mejor si tienes muchas cartas de búsqueda de Pokémon o energías.
+                </p>
+              </article>
+              <article class="rule">
+                <button type="button">
+                  <h3>¡Ojo! No todas las cartas son válidas</h3>
+                  <span>+</span>
+                </button>
+                <p>
+                  La mayoría de torneos son de tipo "Standard". Esto quiere decir que (más o menos) sólo se permiten cartas que hayan sido impresas en los últimos 3 años.
+                </p>
+                <p>
+                  Para saber fácilmente qué puedes utilizar, debe fijarte en la letra de tus cartas que aparece en la esquina inferior izquierda. Actualmente, las únicas letras permitidas (comunmente se llama "rotación") son H, I, J. Cada mes de abril, se retira la letra más antigua y se añade una nueva, de tal forma que siempre haya 3 permitidas.
+                </p>
+                <p>
+                  Puedes consultar más información sobre esto <a href="https://play.pokemon.com/es-es/resources/rules/?category=tcg" target="_blank" rel="noreferrer">en este enlace</a>.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="piedepagina-container"></div>
+    <script src="cabecera.js"></script>
+    <script src="piedepagina.js"></script>
+    <script src="site.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
